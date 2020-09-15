@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CC-003</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/997ba53dfa.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>Checkout</h1>
     <div class="info">
         <form action="">
             <div class="contact">
-                <h3>Contact information</h3>
+                <h2>Contact information</h2>
                 <div class="email">
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email"><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email..."><i class="fas fa-envelope"></i><br>
                 </div>
                 <div class="phone">
                     <label for="phone">Phone</label><br>
-                    <input type="tel" id="phone" name="phone"><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone..."><i class="fas fa-phone-alt"></i><br>
                 </div>
             </div>
             <div class="shipping">
-                <h3>Shipping address</h3>
+                <h2>Shipping address</h2>
                 <div class="fname">
                     <label for="fname">Full name</label><br>
-                    <input type="text" id="fname" name="fname"><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your full name"><i class="fas fa- "></i><br>
                 </div>
                 <div class="address">
                     <label for="address">Address</label><br>
@@ -62,7 +63,27 @@
     <div class="summary">
         <div class="cart">
             <div class="backbag">
+                <img src="./IMG/photo1.png" alt="backbag">
+                <h3>Vintage Backbag</h3>
+                <p><b>$54.99</b> $94.99</p>
+                <button><i class="fas fa-minus"></i></button>
+                <p>1</p>
+                <button><i class="fas fa-plus"></i></button>
                 
+            </div>
+            <div class="shoes">
+                <img src="./IMG/photo2.png" alt="shoes">
+                <h3>Levi Shoes</h3>
+                <p><b>$74.99</b> $124.99</p>
+                <button><i class="fas fa-minus"></i></button>
+                <p>1</p>
+                <button><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="price">
+                <p>Shipping</p>
+                <p>$19</p>
+                <p>Total</p>
+                <p>$148.98</p>
             </div>
         </div>
 
