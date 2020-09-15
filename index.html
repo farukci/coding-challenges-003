@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CC-003</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Checkout</h1>
+    <div class="info">
+        <form action="">
+            <div class="contact">
+                <h3>Contact information</h3>
+                <div class="email">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" id="phone" name="phone"><br>
+                </div>
+            </div>
+            <div class="shipping">
+                <h3>Shipping address</h3>
+                <div class="fname">
+                    <label for="fname">Full name</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                </div>
+                <div class="address">
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" name="address"><br>
+                </div>
+                <div class="city">
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="city"><br>
+                </div>
+                <div class="country">
+                    <label for="country">Country</label><br>
+                    <select name="country" id="country">
+                        <option value="turkey" selected>Turkey</option>
+                        <option value="usa">US</option>
+                        <option value="uk">UK</option>
+                        <option value="germany">Germany</option>
+                        <option value="png">Papua New Guinea</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </div>
+                <div class="post-code">
+                    <label for="postcode">Post Code</label><br>
+                    <input type="number" id="postcode" name="postcode"><br>
+                </div>
+                <div class="seethis">
+                    <input type="checkbox" id="seethis" name="seethis">See this information next time<br>
+                </div>
+                <div class="continue">
+                    <button type="submit" id="continue" >Continue</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="summary">
+        <div class="cart">
+            <div class="backbag">
+                
+            </div>
+        </div>
+
+    </div>
     
 </body>
 </html>
