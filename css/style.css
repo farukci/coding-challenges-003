@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.main {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+form {
+  flex-direction: column;
+  height: 100%;
+  width: 30vw;
+}
+
+form .contact h2 {
+  color: #333333;
+}
+
+form .contact .email, form .contact .phone {
+  margin: 10px 0;
+  position: relative;
+}
+
+form .contact .email label, form .contact .phone label {
+  color: #333333;
+  position: relative;
+  top: 50%;
+}
+
+form .contact .email input, form .contact .phone input {
+  height: 32px;
+  width: 100%;
+  padding-left: 30px;
+  border: 1px solid #828282;
+  border-radius: 6px;
+}
+
+form .contact .email i, form .contact .phone i {
+  position: absolute;
+  color: #828282;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+}
+
+form .shipping h2 {
+  color: #333333;
+}
+
+form .shipping .fname, form .shipping .address, form .shipping .city, form .shipping .country, form .shipping .postcode {
+  margin: 10px 0;
+  position: relative;
+}
+
+form .shipping .fname label, form .shipping .address label, form .shipping .city label, form .shipping .country label, form .shipping .postcode label {
+  color: #333333;
+  position: relative;
+  top: 50%;
+}
+
+form .shipping .fname input, form .shipping .address input, form .shipping .city input, form .shipping .country input, form .shipping .postcode input {
+  height: 32px;
+  width: 100%;
+  padding-left: 30px;
+  border: 1px solid #828282;
+  border-radius: 6px;
+}
+
+form .shipping .fname i, form .shipping .address i, form .shipping .city i, form .shipping .country i, form .shipping .postcode i {
+  position: absolute;
+  color: #828282;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+}
+
+form .shipping .fname select, form .shipping .address select, form .shipping .city select, form .shipping .country select, form .shipping .postcode select {
+  height: 32px;
+  padding-left: 30px;
+  border: 1px solid #828282;
+  border-radius: 6px;
+}
+
+form .shipping .country {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+form .shipping .postcode {
+  display: inline-block;
+}
+
+form .shipping .postcode input {
+  width: 100%;
+}

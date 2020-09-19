@@ -1,0 +1,75 @@
+form {
+    flex-direction: column;
+    height: 100%;
+    width: 30vw;
+    .contact{
+        h2{color: $secondaryText-color;}
+        .email, .phone {
+            margin: 10px 0;
+            position: relative;
+            label{
+                color: $secondaryText-color;
+                position: relative;
+                top:50%;
+            }
+            input{
+                height: 32px;
+                width: 100%;
+                padding-left: 30px;
+                border: 1px solid $icon-color;
+                border-radius: 6px;
+            }
+            i{
+                position: absolute;
+                color: $icon-color;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 2%;
+            }
+        }
+    }
+    .shipping{
+        h2{color: $secondaryText-color;}
+        .fname, .address, .city, .country, .postcode{
+            margin: 10px 0;
+            position: relative;
+            label{
+                color: $secondaryText-color;
+                position: relative;
+                top:50%;
+            }
+            input{
+                height: 32px;
+                width: 100%;
+                padding-left: 30px;
+                border: 1px solid $icon-color;
+                border-radius: 6px;
+            }
+            i{
+                position: absolute;
+                color: $icon-color;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 2%;
+            }
+            select{
+                height: 32px;
+                // width: 10%;
+                padding-left: 30px;
+                border: 1px solid $icon-color;
+                border-radius: 6px;
+            }
+            
+        }
+        .country{
+            display: inline-block;
+            margin-right: 2%;
+        }
+        .postcode{
+            display: inline-block;
+            input{
+                width: 100%;
+            }
+        }
+    }
+}

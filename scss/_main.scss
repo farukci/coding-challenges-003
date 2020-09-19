@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: $primaryBackground-color;
+    font-family: $primaryFont-family;
+}
+// @font-face{
+//     font-family: Mon;
+//     src: url('FONTS/Montserrat-Regular.ttf');
+// }
+
+h1 {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+
+    border:2px solid red;
+}
+
+.main {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}

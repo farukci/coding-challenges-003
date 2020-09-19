@@ -4,90 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CC-003</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/997ba53dfa.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>Checkout</h1>
-    <div class="info">
-        <form action="">
-            <div class="contact">
-                <h2>Contact information</h2>
-                <div class="email">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="Enter your email..."><i class="fas fa-envelope"></i><br>
+    <div class="main">
+        <div class="info">
+            <form action="">
+                <div class="contact">
+                    <h2>Contact information</h2>
+                    <div class="email">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email..."><br>
+                        <i class="fas fa-envelope"></i><br>
+                    </div>
+                    <div class="phone">
+                        <label for="phone">Phone</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone..."><br>
+                        <i class="fas fa-phone-alt"></i><br>
+                    </div>
                 </div>
-                <div class="phone">
-                    <label for="phone">Phone</label><br>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone..."><i class="fas fa-phone-alt"></i><br>
+                <div class="shipping">
+                    <h2>Shipping address</h2>
+                    <div class="fname">
+                        <label for="fname">Full name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your full name"><br>
+                        <i class="fas fa-user"></i><br>
+                    </div>
+                    <div class="address">
+                        <label for="address">Address</label><br>
+                        <input type="text" id="address" name="address" placeholder="Enter your address..."><br>
+                        <i class="fas fa-home"></i><br>
+                    </div>
+                    <div class="city">
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city" placeholder="Enter your city..."><br>
+                        <i class="fas fa-city"></i><br>
+                    </div>
+                    <div class="country">
+                        <label for="country">Country</label><br>
+                        <select name="country" id="country">
+                            <option value="turkey" selected>Turkey</option>
+                            <option value="usa">US</option>
+                            <option value="uk">UK</option>
+                            <option value="germany">Germany</option>
+                            <option value="canada">Canada</option>
+                        </select><br>
+                        <i class="fas fa-globe-europe"></i><br>
+                    </div>
+                    <div class="postcode">
+                        <label for="postcode">Post Code</label><br>
+                        <input type="number" id="postcode" name="postcode" placeholder="Enter your postal code..."><br>
+                        <i class="fas fa-mail-bulk"></i><br>
+                    </div>
+                    <div class="seethis">
+                        <input type="checkbox" id="seethis" name="seethis">See this information next time<br>
+                    </div>
+                    <div class="continue">
+                        <button type="submit" id="continue" >Continue</button>
+                    </div>
                 </div>
-            </div>
-            <div class="shipping">
-                <h2>Shipping address</h2>
-                <div class="fname">
-                    <label for="fname">Full name</label><br>
-                    <input type="text" id="fname" name="fname" placeholder="Enter your full name"><i class="fas fa- "></i><br>
+            </form>
+        </div>
+        <div class="summary">
+            <div class="cart">
+                <div class="backbag">
+                    <img src="./IMG/photo1.png" alt="backbag">
+                    <h3>Vintage Backbag</h3>
+                    <p><b>$54.99</b> $94.99</p>
+                    <button><i class="fas fa-minus"></i></button>
+                    <p>1</p>
+                    <button><i class="fas fa-plus"></i></button>
+                    
                 </div>
-                <div class="address">
-                    <label for="address">Address</label><br>
-                    <input type="text" id="address" name="address"><br>
+                <div class="shoes">
+                    <img src="./IMG/photo2.png" alt="shoes">
+                    <h3>Levi Shoes</h3>
+                    <p><b>$74.99</b> $124.99</p>
+                    <button><i class="fas fa-minus"></i></button>
+                    <p>1</p>
+                    <button><i class="fas fa-plus"></i></button>
                 </div>
-                <div class="city">
-                    <label for="city">City</label><br>
-                    <input type="text" id="city" name="city"><br>
+                <div class="price">
+                    <p>Shipping</p>
+                    <p>$19</p>
+                    <p>Total</p>
+                    <p>$148.98</p>
                 </div>
-                <div class="country">
-                    <label for="country">Country</label><br>
-                    <select name="country" id="country">
-                        <option value="turkey" selected>Turkey</option>
-                        <option value="usa">US</option>
-                        <option value="uk">UK</option>
-                        <option value="germany">Germany</option>
-                        <option value="png">Papua New Guinea</option>
-                        <option value="canada">Canada</option>
-                    </select>
-                </div>
-                <div class="post-code">
-                    <label for="postcode">Post Code</label><br>
-                    <input type="number" id="postcode" name="postcode"><br>
-                </div>
-                <div class="seethis">
-                    <input type="checkbox" id="seethis" name="seethis">See this information next time<br>
-                </div>
-                <div class="continue">
-                    <button type="submit" id="continue" >Continue</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="summary">
-        <div class="cart">
-            <div class="backbag">
-                <img src="./IMG/photo1.png" alt="backbag">
-                <h3>Vintage Backbag</h3>
-                <p><b>$54.99</b> $94.99</p>
-                <button><i class="fas fa-minus"></i></button>
-                <p>1</p>
-                <button><i class="fas fa-plus"></i></button>
-                
-            </div>
-            <div class="shoes">
-                <img src="./IMG/photo2.png" alt="shoes">
-                <h3>Levi Shoes</h3>
-                <p><b>$74.99</b> $124.99</p>
-                <button><i class="fas fa-minus"></i></button>
-                <p>1</p>
-                <button><i class="fas fa-plus"></i></button>
-            </div>
-            <div class="price">
-                <p>Shipping</p>
-                <p>$19</p>
-                <p>Total</p>
-                <p>$148.98</p>
             </div>
         </div>
-
     </div>
-    
 </body>
 </html>
