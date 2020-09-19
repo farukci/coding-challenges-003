@@ -1,19 +1,21 @@
 form {
-    flex-direction: column;
     height: 100%;
-    width: 30vw;
+    width: 120%;
     .contact{
-        h2{color: $secondaryText-color;}
+        margin-bottom: 10%;
+        h2{
+            color: $secondaryText-color; 
+            margin-bottom: 5%;
+        }
         .email, .phone {
-            margin: 10px 0;
             position: relative;
             label{
                 color: $secondaryText-color;
-                position: relative;
-                top:50%;
+                position: absolute;
+                top: -10%;
             }
             input{
-                height: 32px;
+                height: 36px;
                 width: 100%;
                 padding-left: 30px;
                 border: 1px solid $icon-color;
@@ -29,17 +31,19 @@ form {
         }
     }
     .shipping{
-        h2{color: $secondaryText-color;}
+        h2{
+            color: $secondaryText-color; 
+            margin-bottom: 5%;
+        }
         .fname, .address, .city, .country, .postcode{
-            margin: 10px 0;
             position: relative;
             label{
                 color: $secondaryText-color;
-                position: relative;
-                top:50%;
+                position: absolute;
+                top: -10%;
             }
             input{
-                height: 32px;
+                height: 36px;
                 width: 100%;
                 padding-left: 30px;
                 border: 1px solid $icon-color;
@@ -53,8 +57,7 @@ form {
                 left: 2%;
             }
             select{
-                height: 32px;
-                // width: 10%;
+                height: 36px;
                 padding-left: 30px;
                 border: 1px solid $icon-color;
                 border-radius: 6px;
@@ -64,11 +67,14 @@ form {
         .country{
             display: inline-block;
             margin-right: 2%;
+            .fa-globe-europe{
+                left:5%;
+            }
         }
         .postcode{
             display: inline-block;
             input{
-                width: 100%;
+                width: auto;
             }
         }
     }

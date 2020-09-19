@@ -1,0 +1,32 @@
+.right-container{
+    margin-left: 100px;
+    * {
+        background-color: $secondaryBackground-color;
+        border-radius: 3%;
+    }
+    height: 100vh;
+    width: 400px;
+    .backbag, .shoes {
+        padding: 3%;
+        display: flex;
+        img{
+            width: 30%;
+            border-radius: 5px;
+            margin: 3%;
+        }
+        .content{
+            margin-top: 3%;
+        }
+    }
+    .price{
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        div{
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid $icon-color;
+            padding: 3% 0;
+        }
+    }
+}

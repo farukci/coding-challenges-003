@@ -1,19 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   background-color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
   width: 100%;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid red;
 }
 
 .main {
-  border: 2px solid blue;
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -22,28 +21,31 @@ h1 {
 }
 
 form {
-  flex-direction: column;
   height: 100%;
-  width: 30vw;
+  width: 120%;
+}
+
+form .contact {
+  margin-bottom: 10%;
 }
 
 form .contact h2 {
   color: #333333;
+  margin-bottom: 5%;
 }
 
 form .contact .email, form .contact .phone {
-  margin: 10px 0;
   position: relative;
 }
 
 form .contact .email label, form .contact .phone label {
   color: #333333;
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: -10%;
 }
 
 form .contact .email input, form .contact .phone input {
-  height: 32px;
+  height: 36px;
   width: 100%;
   padding-left: 30px;
   border: 1px solid #828282;
@@ -60,21 +62,21 @@ form .contact .email i, form .contact .phone i {
 
 form .shipping h2 {
   color: #333333;
+  margin-bottom: 5%;
 }
 
 form .shipping .fname, form .shipping .address, form .shipping .city, form .shipping .country, form .shipping .postcode {
-  margin: 10px 0;
   position: relative;
 }
 
 form .shipping .fname label, form .shipping .address label, form .shipping .city label, form .shipping .country label, form .shipping .postcode label {
   color: #333333;
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: -10%;
 }
 
 form .shipping .fname input, form .shipping .address input, form .shipping .city input, form .shipping .country input, form .shipping .postcode input {
-  height: 32px;
+  height: 36px;
   width: 100%;
   padding-left: 30px;
   border: 1px solid #828282;
@@ -90,7 +92,7 @@ form .shipping .fname i, form .shipping .address i, form .shipping .city i, form
 }
 
 form .shipping .fname select, form .shipping .address select, form .shipping .city select, form .shipping .country select, form .shipping .postcode select {
-  height: 32px;
+  height: 36px;
   padding-left: 30px;
   border: 1px solid #828282;
   border-radius: 6px;
@@ -101,10 +103,53 @@ form .shipping .country {
   margin-right: 2%;
 }
 
+form .shipping .country .fa-globe-europe {
+  left: 5%;
+}
+
 form .shipping .postcode {
   display: inline-block;
 }
 
 form .shipping .postcode input {
-  width: 100%;
+  width: auto;
+}
+
+.right-container {
+  margin-left: 100px;
+  height: 100vh;
+  width: 400px;
+}
+
+.right-container * {
+  background-color: #EEEEEE;
+  border-radius: 3%;
+}
+
+.right-container .backbag, .right-container .shoes {
+  padding: 3%;
+  display: flex;
+}
+
+.right-container .backbag img, .right-container .shoes img {
+  width: 30%;
+  border-radius: 5px;
+  margin: 3%;
+}
+
+.right-container .backbag .content, .right-container .shoes .content {
+  margin-top: 3%;
+}
+
+.right-container .price {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.right-container .price div {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #828282;
+  padding: 3% 0;
 }
