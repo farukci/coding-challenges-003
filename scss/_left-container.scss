@@ -1,14 +1,15 @@
 form {
     height: 100%;
-    width: 120%;
+    width: 130%;
     .contact{
         margin-bottom: 10%;
-        h2{
+        h3{
             color: $secondaryText-color; 
             margin-bottom: 5%;
         }
         .email, .phone {
             position: relative;
+            font-size: 0.8rem;
             label{
                 color: $secondaryText-color;
                 position: absolute;
@@ -31,12 +32,13 @@ form {
         }
     }
     .shipping{
-        h2{
+        h3{
             color: $secondaryText-color; 
             margin-bottom: 5%;
         }
         .fname, .address, .city, .country, .postcode{
             position: relative;
+            font-size: 0.8rem;
             label{
                 color: $secondaryText-color;
                 position: absolute;
@@ -75,6 +77,56 @@ form {
             display: inline-block;
             input{
                 width: auto;
+            }
+        }
+    }
+    .seethis {
+        font-size: 0.8rem;
+        color: $icon-color;
+        label{
+            margin-left: 10px;
+        }
+    }
+    .continue{
+        button{
+            border: 1px solid $button-color;
+            background-color: $button-color;
+            color: $primaryBackground-color;
+            font-size: 0.9rem;
+            padding: 3%;
+            border-radius: 10px;
+            position: relative;
+            left: 110%;
+            margin: 0 30px;
+        }
+    }
+}
+
+@media(max-width:1500px){
+        form {
+            .continue{
+                button{
+                    left: 100%;
+            }
+        }
+    }
+}
+@media(max-width:1300px){
+        form {
+            .continue{
+                button{
+                    left: 90%;
+            }
+        }
+    }
+}
+@media(max-width:1150px){
+        form {
+            width: 110%;
+            .continue{
+                button{
+                    margin: 10px 0;
+                    left: 0;
             }
         }
     }

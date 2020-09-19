@@ -17,5 +17,13 @@ h1 {
     flex-direction: row;
     width: 80%;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+@media(max-width:1150px){
+    .main{
+        // border: 2px solid red;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 }

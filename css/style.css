@@ -17,25 +17,33 @@ h1 {
   flex-direction: row;
   width: 80%;
   margin: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1150px) {
+  .main {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
 
 form {
   height: 100%;
-  width: 120%;
+  width: 130%;
 }
 
 form .contact {
   margin-bottom: 10%;
 }
 
-form .contact h2 {
+form .contact h3 {
   color: #333333;
   margin-bottom: 5%;
 }
 
 form .contact .email, form .contact .phone {
   position: relative;
+  font-size: 0.8rem;
 }
 
 form .contact .email label, form .contact .phone label {
@@ -60,13 +68,14 @@ form .contact .email i, form .contact .phone i {
   left: 2%;
 }
 
-form .shipping h2 {
+form .shipping h3 {
   color: #333333;
   margin-bottom: 5%;
 }
 
 form .shipping .fname, form .shipping .address, form .shipping .city, form .shipping .country, form .shipping .postcode {
   position: relative;
+  font-size: 0.8rem;
 }
 
 form .shipping .fname label, form .shipping .address label, form .shipping .city label, form .shipping .country label, form .shipping .postcode label {
@@ -115,41 +124,122 @@ form .shipping .postcode input {
   width: auto;
 }
 
+form .seethis {
+  font-size: 0.8rem;
+  color: #828282;
+}
+
+form .seethis label {
+  margin-left: 10px;
+}
+
+form .continue button {
+  border: 1px solid #F2994A;
+  background-color: #F2994A;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  padding: 3%;
+  border-radius: 10px;
+  position: relative;
+  left: 110%;
+  margin: 0 30px;
+}
+
+@media (max-width: 1500px) {
+  form .continue button {
+    left: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  form .continue button {
+    left: 90%;
+  }
+}
+
+@media (max-width: 1150px) {
+  form {
+    width: 110%;
+  }
+  form .continue button {
+    margin: 10px 0;
+    left: 0;
+  }
+}
+
 .right-container {
   margin-left: 100px;
-  height: 100vh;
-  width: 400px;
+  height: 100%;
+  max-width: 400px;
 }
 
 .right-container * {
   background-color: #EEEEEE;
-  border-radius: 3%;
+  border-radius: 15px;
 }
 
 .right-container .backbag, .right-container .shoes {
-  padding: 3%;
+  padding: 5%;
   display: flex;
 }
 
 .right-container .backbag img, .right-container .shoes img {
   width: 30%;
+  height: 15vh;
   border-radius: 5px;
-  margin: 3%;
+  margin-right: 5%;
 }
 
 .right-container .backbag .content, .right-container .shoes .content {
-  margin-top: 3%;
+  color: #333333;
+}
+
+.right-container .backbag .content p b, .right-container .shoes .content p b {
+  color: #F2994A;
+}
+
+.right-container .backbag .content p del, .right-container .shoes .content p del {
+  font-size: 0.8rem;
+}
+
+.right-container .backbag .content .count, .right-container .shoes .content .count {
+  display: flex;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  width: 100px;
+  justify-content: space-between;
+  padding: 1%;
+  margin-top: 20px;
+}
+
+.right-container .backbag .content .count button, .right-container .backbag .content .count i, .right-container .shoes .content .count button, .right-container .shoes .content .count i {
+  margin: 5px;
+  border-radius: 3px;
+  border-style: none;
+  background-color: #E0E0E0;
+}
+
+.right-container .backbag .content .count p, .right-container .shoes .content .count p {
+  padding-top: 7px;
 }
 
 .right-container .price {
   display: flex;
   flex-direction: column;
-  padding: 3%;
+  padding: 5%;
 }
 
 .right-container .price div {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #828282;
-  padding: 3% 0;
+  border-radius: 0;
+  padding: 1% 0 4%;
+}
+
+@media (max-width: 1150px) {
+  .right-container {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
